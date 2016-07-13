@@ -1,0 +1,14 @@
+<ul id="active" class="nav navbar-nav side-nav">
+  {{#link-to "mappings.mapping" model.mappingId}}{{ model.mappingId }} {{/link-to}}
+  {{#each model as |item|}}
+    <ul>
+      <li>{{item}} </li>
+      <!-- <li> {{#link-to "mappings.mapping" item.id}} {{item.name}} {{/link-to}}</li> -->
+    </ul>
+  {{/each}}
+</ul>
+
+<div id="page-wrapper">
+  {{outlet}}
+
+</div>

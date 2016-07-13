@@ -6,6 +6,11 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  // this.route('mappings');
+
+  this.route('mappings', function() {
+    this.route('mapping', { path: '/:mapping_id' });
+  });
 });
 
 export default Router;
